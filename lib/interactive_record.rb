@@ -30,6 +30,7 @@ class InteractiveRecord
     
   def table_name_for_insert
     self.class.table_name
+    binding.pry
   end
   
   def col_names_for_insert

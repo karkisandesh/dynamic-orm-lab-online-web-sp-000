@@ -33,7 +33,8 @@ class InteractiveRecord
   
   def values_for_insert
     values = []
-    
+    self.class.column_names.each do |value|
+      values << "'send#{value}"
     
   end
   

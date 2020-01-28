@@ -40,6 +40,6 @@ class InteractiveRecord
   end
   
   def save
-    DB[:conn].execute
+    DB[:conn].execute("INSERT INTO ")
   end
 end

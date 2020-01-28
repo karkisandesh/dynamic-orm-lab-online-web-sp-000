@@ -40,6 +40,6 @@ class InteractiveRecord
   end
   
   def save
-    
+    DB[:conn].execute
   end
 end

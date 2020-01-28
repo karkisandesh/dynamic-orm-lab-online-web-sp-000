@@ -19,6 +19,7 @@ class InteractiveRecord
       column_names << column["name"]
     end
     column_names.compact
+    binding.pry
   end
   
   # def self.column_names

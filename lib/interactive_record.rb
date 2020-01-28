@@ -16,10 +16,10 @@ class InteractiveRecord
     column_names = []
     
     table_info.each do |column|
+      binding.pry
       column_names << column["name"]
     end
     column_names.compact
-    binding.pry
   end
   
   # def self.column_names

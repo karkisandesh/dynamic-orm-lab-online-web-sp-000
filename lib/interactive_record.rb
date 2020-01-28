@@ -56,7 +56,6 @@ class InteractiveRecord
     DB[:conn].execute(sql)
   end
 
-  
    def self.find_by(attr_hash)
     column=attr_hash.keys[0].to_s
     value = attr_hash[attr_hash.keys[0]]

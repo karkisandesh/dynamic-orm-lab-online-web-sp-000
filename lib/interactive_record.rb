@@ -57,7 +57,7 @@ def self.find_by_name(name)
 
    def self.find_by(attr_hash)
     column=attr_hash.keys[0].to_s
-    value = attr_hash[attr_hash.keys[0]]
+    value = attr_hash.values[0]
     sql="SELECT * FROM #{self.table_name} WHERE #{column} = '#{value}'"
     binding.pry
     DB[:conn].execute(sql)

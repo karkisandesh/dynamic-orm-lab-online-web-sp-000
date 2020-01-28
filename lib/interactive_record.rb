@@ -48,8 +48,7 @@ class InteractiveRecord
       
   DB[:conn].execute("INSERT INTO #{self.table_name} (#{col_names_for_insert}) VALUES (?)", [values_for_insert])
  
-  @id = DB[:conn].execute("SELECT last_insert_rowid() FROM #{table_name_for_insert}")[0][0]
-binding.pry
+  @id = DB[:conn].execute("SELECT last_insert_rowid() FROM #{table_name_for_insert}")[0][0]binding.pry
 end
   
   def self.find_by_name(name)
